@@ -1,0 +1,140 @@
+.our-promise {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 60px 20px 80px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #333;
+}
+
+.our-promise-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.our-promise-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.our-promise-subtitle {
+  font-size: 15px;
+  color: #777;
+  margin-bottom: 50px;
+}
+
+/* grid */
+
+.promise-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 50px 40px;
+  text-align: left;
+}
+
+/* card */
+
+.promise-card {
+  position: relative;
+  padding-top: 16px; /* space for colored line */
+}
+
+.promise-top-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+}
+
+/* color variants (close to screenshot) */
+.promise-card.teal .promise-top-line {
+  background-color: #28c4b8;
+}
+
+.promise-card.orange .promise-top-line {
+  background-color: #f2a11f;
+}
+
+.promise-card.blue .promise-top-line {
+  background-color: #1fa3f2;
+}
+
+.promise-card.purple .promise-top-line {
+  background-color: #a03cf2;
+}
+
+.promise-card.red .promise-top-line {
+  background-color: #f24b4b;
+}
+
+.promise-card.green .promise-top-line {
+  background-color: #35b564;
+}
+
+.promise-content {
+  padding-top: 10px;
+}
+
+.promise-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+}
+
+.promise-icon {
+  font-size: 28px;
+}
+
+.promise-heading {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.promise-text {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #555;
+}
+
+/* responsive */
+
+@media (max-width: 992px) {
+  .promise-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .our-promise {
+    padding: 40px 16px 60px;
+  }
+
+  .our-promise-title {
+    font-size: 32px;
+  }
+
+  .promise-grid {
+    grid-template-columns: 1fr;
+    gap: 35px;
+  }
+}
+.promise-icon {
+  font-size: 30px;
+}
+
+/* icon color matches top line */
+.promise-card.teal .promise-icon { color: #28c4b8; }
+.promise-card.orange .promise-icon { color: #f2a11f; }
+.promise-card.blue .promise-icon { color: #1fa3f2; }
+.promise-card.purple .promise-icon { color: #a03cf2; }
+.promise-card.red .promise-icon { color: #f24b4b; }
+.promise-card.green .promise-icon { color: #35b564; }
+
+.promise-header {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
